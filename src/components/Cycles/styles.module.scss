@@ -1,0 +1,18 @@
+@use "./../../styles/theme" as *;
+
+.cycles {
+}
+
+.cycleDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  span {
+    width: 2rem;
+    height: 2rem;
+    background-color: $primary;
+    border-radius: 50%;
+  }
+}
