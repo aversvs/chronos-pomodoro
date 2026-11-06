@@ -4,7 +4,7 @@ A focus timer based on the Pomodoro Technique. Name a task, start the clock, and
 
 Built with React 19, TypeScript and Vite.
 
-**[Live demo →](https://chronos-pomodoro-orcin-psi.vercel.app)**
+**[Live demo →](https://chronospomodoro.vercel.app)**
 
 <p align="center">
   <img src="docs/screenshots/home.png" alt="Chronos Pomodoro home screen with a running focus timer" width="420" />
@@ -78,7 +78,7 @@ npm run dev
 
 ## Deployment
 
-The app is deployed on [Vercel](https://chronos-pomodoro-orcin-psi.vercel.app) and redeploys on every push to `main`. It is a static single-page app: `vercel.json` rewrites every route to `index.html`, so links such as `/history` and `/settings` also work on a full page reload.
+The app is deployed on [Vercel](https://chronospomodoro.vercel.app) and redeploys on every push to `main`. It is a static single-page app: `vercel.json` rewrites every route to `index.html`, so links such as `/history` and `/settings` also work on a full page reload.
 
 ## Credits
 
