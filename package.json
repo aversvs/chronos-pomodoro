@@ -1,8 +1,11 @@
 {
   "name": "chronos-pomodoro",
+  "description": "A Pomodoro timer built with React 19, TypeScript and Vite.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Thiago Fuganti <fuganti@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
