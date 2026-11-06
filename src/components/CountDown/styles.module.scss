@@ -1,17 +1,7 @@
-@use "./../../styles/theme" as *;
-
-.countDown{
-    font-size: clamp(8rem, 30vw, 16rem);
-    font-weight: bold;
-    text-align: center;
-    margin: 6rem 0 4rem;
-
+.countDown {
+	font-size: clamp(8rem, 30vw, 16rem);
+	font-weight: bold;
+	text-align: center;
+	margin: 6rem 0 4rem;
+	font-variant-numeric: tabular-nums;
 }
-
-
-
-
-
-  
-    
-

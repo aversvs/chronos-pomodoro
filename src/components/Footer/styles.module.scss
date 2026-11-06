@@ -1,6 +1,4 @@
-@use "./../../styles/theme" as *;
-
-footer {
+.footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8,12 +6,17 @@ footer {
 	gap: 2rem;
 	margin: 6rem 0;
 	a {
-		color:   var(--gray-200);
+		color: var(--gray-200);
 		transition: var(--transition);
 		font-size: 1.2rem;
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			filter: var(--filter);
 			text-decoration: underline;
+		}
+		&:focus-visible {
+			outline: var(--focus-outline);
+			outline-offset: var(--focus-outline-offset);
 		}
 	}
 	span {

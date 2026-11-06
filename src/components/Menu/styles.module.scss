@@ -1,11 +1,8 @@
-@use "./../../styles/theme" as *;
-
 .menu {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 1.5rem;
-	font-size: 4.2rem;
 	margin: 3.2rem 0;
 	li {
 		a {
@@ -21,8 +18,13 @@
 				width: 3rem;
 				height: 3rem;
 			}
-			&:hover {
+			&:hover,
+			&:focus-visible {
 				filter: var(--filter);
+			}
+			&:focus-visible {
+				outline: var(--focus-outline);
+				outline-offset: var(--focus-outline-offset);
 			}
 		}
 	}

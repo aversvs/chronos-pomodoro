@@ -1,11 +1,11 @@
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss';
 
 type DefaultButtonProps = {
 	icon: React.ReactNode;
-	color?: "stateOne" | "stateTwo";
-} & React.ComponentProps<"button">;
+	color?: 'stateOne' | 'stateTwo';
+} & React.ComponentProps<'button'>;
 
-export function DefaultButton({ icon, color = "stateTwo", ...props }: DefaultButtonProps) {
+export function DefaultButton({ icon, color = 'stateTwo', ...props }: DefaultButtonProps) {
 	return (
 		<button className={`${styles.button} ${styles[color]}`} {...props}>
 			{icon}

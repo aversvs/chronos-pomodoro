@@ -1,9 +1,9 @@
-import styles from "./styles.module.scss"
+import styles from './styles.module.scss'
 
 type DefaultInputProps = {
   id: string;
   labelText: string,
-} & React.ComponentProps<"input">;
+} & React.ComponentProps<'input'>;
 
 export function DefaultInput({ id, type, labelText, ...rest }: DefaultInputProps) {
   return (

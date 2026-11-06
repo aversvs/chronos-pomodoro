@@ -14,7 +14,6 @@
 
 	--primary-light: #4de7b7;
 	--primary: #0da170;
-	//--primary: #ff0000;
 	--primary-dark: #065f46;
 
 	--link-color: #10b981;
@@ -40,7 +39,21 @@
 	--text-disabled: #aab3cc;
 
 	--filter: brightness(80%);
-	--transition: all 0.3s ease-in-out;
+	--transition: filter 0.3s ease-in-out;
+
+	--focus-outline: 0.2rem solid var(--text-default);
+	--focus-outline-offset: 0.2rem;
+
+	--toastify-color-light: var(--text-default);
+	--toastify-color-dark: var(--text-default);
+	--toastify-color-info: var(--info);
+	--toastify-color-success: var(--success);
+	--toastify-color-warning: var(--warning);
+	--toastify-color-error: var(--error);
+	--toastify-text-color-light: #0a0f1a;
+	--toastify-text-color-dark: #e6e9f0;
+	--toastify-color-progress-light: var(--primary);
+	--toastify-color-progress-dark: var(--primary);
 }
 
 :root[data-theme="light"] {
@@ -59,4 +72,7 @@
 
 	--link-color: #0b8a60;
 	--link-hover: #065f46;
+
+	--toastify-text-color-light: #e6e9f0;
+	--toastify-text-color-dark: #e6e9f0;
 }

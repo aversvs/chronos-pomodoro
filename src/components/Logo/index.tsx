@@ -1,14 +1,15 @@
-import { Clock } from "lucide-react";
-import styles from "./styles.module.scss";
+import ChronosLogo from '../../icons/chronos-logo.svg?react';
+import styles from './styles.module.scss';
+import { RouterLink } from '../RouterLink';
 
 
 export function Logo() {
   return (
     <div>
-      <a href="" className={styles.logo}>
-        <Clock/>
+      <RouterLink href="/" className={styles.logo}>
+        <ChronosLogo aria-hidden='true' />
         <span>Chronos</span>
-      </a>
+      </RouterLink>
     </div>
   );
 }

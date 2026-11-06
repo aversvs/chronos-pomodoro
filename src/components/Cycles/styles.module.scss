@@ -1,32 +1,69 @@
-@use "./../../styles/theme" as *;
-
 .cycles {
+	margin-top: 2.4rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: 10px;
+	gap: 1rem;
 }
 
-.cycleDots {
+.track {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 0.8rem;
 	padding: 1rem;
-	span {
-		width: 2rem;
-		height: 2rem;
-		background-color: var(--primary);
-		border-radius: 50%;
+	list-style: none;
+}
+
+.step {
+	height: 1.2rem;
+	border-radius: 99rem;
+	background-color: var(--gray-600);
+	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.workTime {
+	width: 3.2rem;
+}
+
+.shortBreakTime {
+	width: 1.2rem;
+}
+
+.longBreakTime {
+	width: 2rem;
+	height: 2rem;
+}
+
+.done {
+	background-color: var(--primary);
+}
+
+.inProgress {
+	background-color: var(--primary);
+	animation: pulse 1.6s ease-in-out infinite;
+}
+
+.next {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 0.2rem var(--primary);
+}
+
+.label {
+	font-size: 1.4rem;
+	color: var(--text-muted);
+	font-variant-numeric: tabular-nums;
+}
+
+@keyframes pulse {
+	50% {
+		opacity: 0.4;
 	}
-	.workTime {
-		background-color: var(--warning);
-	}
-	.shortBreakTime {
-		background-color: var(--success);
-	}
-	.longBreakTime {
-		background-color: var(--info);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.inProgress {
+		animation: none;
 	}
 }

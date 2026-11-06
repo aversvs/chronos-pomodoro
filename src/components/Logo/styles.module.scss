@@ -1,5 +1,3 @@
-@use "./../../styles/theme" as *;
-
 .logo {
 	display: flex;
 	flex-direction: column;
@@ -12,10 +10,16 @@
 	color: var(--primary);
 	transition: var(--transition);
 	svg {
-		width: 6.4rem;
-		height: 6.4rem;
+		width: auto;
+		height: 10rem;
 	}
-	&:hover {
+	&:hover,
+	&:focus-visible {
 		filter: var(--filter);
+	}
+	&:focus-visible {
+		outline: var(--focus-outline);
+		outline-offset: var(--focus-outline-offset);
+		border-radius: 0.8rem;
 	}
 }

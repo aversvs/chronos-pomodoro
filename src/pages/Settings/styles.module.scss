@@ -1,0 +1,12 @@
+.description {
+	text-align: center;
+	padding-bottom: 3.2rem;
+}
+
+.settingsForm:global(.form) {
+	gap: 3.2rem;
+
+	:global(.formRow) {
+		gap: 0.4rem;
+	}
+}
