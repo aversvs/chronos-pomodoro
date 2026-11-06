@@ -3,9 +3,16 @@ import styles from "./styles.module.scss"
 export function Cycles(){
     return(
         <div className={styles.cycles}>
-            <span>Cycles</span>
+            <span className="subTitle">Cycles</span>
             <div className={styles.cycleDots}>
-                <span></span>
+                <span className={styles.workTime}></span>
+                <span className={styles.shortBreakTime}></span>
+                <span className={styles.workTime}></span>
+                <span className={styles.shortBreakTime}></span>
+                <span className={styles.workTime}></span>
+                <span className={styles.shortBreakTime}></span>
+                <span className={styles.workTime}></span>
+                <span className={styles.longBreakTime}></span>
             </div>
         </div>
     )

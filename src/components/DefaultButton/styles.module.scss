@@ -1,0 +1,29 @@
+@use "./../../styles/theme" as *;
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 24rem;
+	padding: 1rem;
+	margin: 1rem 0;
+	border: 0;
+	cursor: pointer;
+	border-radius: 0.8rem;
+	transition: all 0.3s ease-in-out;
+	svg {
+		width: 3rem;
+		height: 3rem;
+	}
+	&.stateOne {
+		background-color: var(--primary);
+		color: var(--text-over-primary);
+	}
+	&.stateTwo {
+		background-color: var(--error) ;
+		color: var(--text-over-error);
+	}
+	&:hover {
+		filter: var(--filter);
+	}
+}

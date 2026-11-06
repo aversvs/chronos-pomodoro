@@ -22,8 +22,8 @@ html {
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     font-size: 1.6rem;
-    background: $gray-900;
-    color: $text-default;
+    background:  var(--gray-900);
+    color: var(--text-default );
   }
 }
 
@@ -41,4 +41,11 @@ html {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+
+.subTitle {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color:  var(--primary);
 }

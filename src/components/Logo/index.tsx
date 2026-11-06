@@ -1,4 +1,4 @@
-import { Clock, Timer, TimerIcon } from "lucide-react";
+import { Clock } from "lucide-react";
 import styles from "./styles.module.scss";
 
 

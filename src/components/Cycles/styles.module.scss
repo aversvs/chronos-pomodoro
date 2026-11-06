@@ -1,18 +1,32 @@
 @use "./../../styles/theme" as *;
 
 .cycles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
 }
 
 .cycleDots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 1rem;
-  span {
-    width: 2rem;
-    height: 2rem;
-    background-color: $primary;
-    border-radius: 50%;
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+	padding: 1rem;
+	span {
+		width: 2rem;
+		height: 2rem;
+		background-color: var(--primary);
+		border-radius: 50%;
+	}
+	.workTime {
+		background-color: var(--warning);
+	}
+	.shortBreakTime {
+		background-color: var(--success);
+	}
+	.longBreakTime {
+		background-color: var(--info);
+	}
 }
